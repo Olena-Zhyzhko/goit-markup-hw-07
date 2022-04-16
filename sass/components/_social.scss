@@ -18,19 +18,22 @@
     height: 44px;
     border-radius: 50%;
     transition: background-color var(--anim);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+    }
 }
 
 .social__icon {
     fill: #afb1b8;
     transition: fill var(--anim);
+
+    .social__link:hover &,
+    .social__link:focus & {
+        fill: var(--light-color);
+    }
 }
 
-.social__link:hover,
-.social__link:focus {
-    background-color: var(--accent-color);
-}
 
-.social__link:hover .social__icon,
-.social__link:focus .social__icon {
-    fill: var(--light-color);
-}
+

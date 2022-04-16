@@ -11,11 +11,11 @@
 .featurs-list {
     display: flex;
     margin-left: -30px;
-}
 
-.featurs-list>.featurs-item {
-    margin-left: 30px;
-    flex-basis: calc(100% / 4 - 30px);
+    .featurs-item {
+        margin-left: 30px;
+        flex-basis: calc(100% / 4 - 30px);
+    }
 }
 
 .featurs-thumb {

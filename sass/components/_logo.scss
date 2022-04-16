@@ -5,12 +5,13 @@
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
+
+  &--accent {
+    color: var(--accent-color);
+  }
+  
+  &--light {
+    color: var(--light-color);
+  }
 }
 
-.logo--accent {
-  color: var(--accent-color);
-}
-
-.logo--light {
-  color: var(--light-color);
-}

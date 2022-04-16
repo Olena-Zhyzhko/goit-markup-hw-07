@@ -5,14 +5,16 @@
     text-decoration: none;
 }
 
-.footer-contacts__list {
-    margin-top: 9px;
-}
-
-.footer-contacts__item:not(:last-child) {
-    margin-bottom: 9px;
-}
-
-.footer-contacts__link {
-    color: var(--style-text-color);
+.footer-contacts {
+    &__list {
+        margin-top: 9px;
+    }
+    
+    &__item:not(:last-child) {
+        margin-bottom: 9px;
+    }
+    
+    &__link {
+        color: var(--style-text-color);
+    }
 }

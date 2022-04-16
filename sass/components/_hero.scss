@@ -51,10 +51,11 @@
     border: 0px;
     border-radius: 4px;
     transition: background-color var(--anim);
+
+    &:hover,
+    &:focus {
+        background-color: var(--btn-hover);
+        cursor: pointer;
+    }
 }
 
-.hero-btn:hover,
-.hero-btn:focus {
-    background-color: var(--btn-hover);
-    cursor: pointer;
-}

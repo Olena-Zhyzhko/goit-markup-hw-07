@@ -8,8 +8,6 @@
     align-items: center;
 }
 
-@import './logo';
-
 .nav {
     margin-left: 93px;
 }
@@ -42,22 +40,24 @@
 .nav__link--current {
     position: relative;
     color: var(--accent-color);
+
+    &::after {
+        content: '';
+    
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+    
+        display: block;
+        width: 100%;
+        height: 4px;
+    
+        background: #2196f3;
+        border-radius: 2px;
+    }
 }
 
-.nav__link--current::after {
-    content: '';
 
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-
-    display: block;
-    width: 100%;
-    height: 4px;
-
-    background: #2196f3;
-    border-radius: 2px;
-}
 
 .header-contacts__list {
     display: flex;
